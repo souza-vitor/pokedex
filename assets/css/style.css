@@ -6,9 +6,14 @@
 }
 
 body {
-    padding: 2em;
-    background-color: #7fc671;
+    padding: 3em 6em;
     color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
 
 .pokemon-info {
@@ -28,6 +33,7 @@ body {
 .pokemon-info--name {
     font-size: 2em;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 .pokemon-stats {
@@ -36,6 +42,7 @@ body {
     align-items: baseline;
     justify-content: center;
     gap: 0.5em;
+    margin-bottom: 1.5em;
 }
 
 .pokemon-stats span {
@@ -52,16 +59,13 @@ body {
     width: 100%;
 }
 
-.pokemon-img--nameJP {
-    margin-top: 0.5em;
-    font-size: 3em;
-    font-weight: 500;
-    text-align: center;
-    opacity: 0.7;
-}
-
 .pokemon-type {
-    margin: 1em 0;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
 }
 
 .pokemon-type--title {
@@ -74,7 +78,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: baseline;
+    justify-content: center;
     gap: 1em;
 }
 
@@ -209,4 +213,94 @@ body {
     color: #fff;
     padding: 0.5em 1em;
     border-radius: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+    .pokemon-img--nameJP {
+        font-size: 3em;
+    }   
+}
+
+@media screen and (min-width: 1440px) {
+    .pokemon-info,
+    .pokemon-stats {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        margin: 2em auto;
+    }
+}
+
+.grass {
+    background-color: #9acc50c5;
+}
+
+.poison {
+    background-color: #b97fc9d5;
+}
+
+.ghost {
+    background-color: #7b62a3d3;
+}
+
+.fire {
+    background-color: #fd7e24d3;
+}
+
+.water {
+    background-color: #4591c4da;
+}
+
+.flying {
+    background-color: #3dc8efd8;
+}
+
+.bug {
+    background-color: #729f3fd5;
+}
+
+.normal {
+    background-color: #a4acafd5;
+}
+
+.electric {
+    background-color: #eed535dc;
+}
+
+.fighting {
+    background-color: #d56723d8;
+}
+
+.psychic {
+    background-color: #f366b8d8;
+}
+
+.rock {
+    background-color: #a38b21dc;
+}
+
+.ice {
+    background-color: #51c4e7dc;
+}
+
+.dragon {
+    background-color: #f16e57da;
+}
+
+.dark {
+    background-color: #707070d3;
+}
+
+.steel {
+    background-color: #9eb7b8dc;
+}
+
+.fairy {
+    background-color: #fdb9e9e1;
+}
+
+.unknown {
+    background-color: #68a090e1;
 }
